@@ -15,7 +15,7 @@ gfw_json=""
 for((line_num=1;line_num<=${total_lines};line_num++))
 do
   line=`echo "${gfw_txt}" | sed -n "${line_num}p"`
-  line="      ${line},"
+  line="      "${line}","
   gfw_json="${gfw_json}
 ${line}"
 done
@@ -40,7 +40,7 @@ echo "${txt1}${gfw_json}${txt2}" > "${path}gfw.json"
 now_time=`date`
 
 txt="# gfwlist
-## raw -> json based on [v2ray-rules-dat](https://github.com/Loyalsoldier/v2ray-rules-dat)
+## raw -> json, based on [v2ray-rules-dat](https://github.com/Loyalsoldier/v2ray-rules-dat)
 ${now_time}
 "
 echo "${txt}" > "${path}README.md"
