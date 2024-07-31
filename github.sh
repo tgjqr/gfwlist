@@ -21,7 +21,7 @@ ${line}"
 done
 
 gfw_json="${gfw_json}
-      fezq2g90kz.com"
+      \"fezq2g90kz.com\""
 txt1="{
   "version": 1,
   "rules": [
