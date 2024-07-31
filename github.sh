@@ -2,7 +2,7 @@
 
 path="./github/"
 
-d_url=`curl -s "https://api.github.com/repos/Loyalsoldier/v2ray-rules-dat/releases/latest" | grep "browser_download_url" | grep "gfw.txt" | cut -d'"' -f4`
+d_url="https://raw.githubusercontent.com/Loyalsoldier/v2ray-rules-dat/release/gfw.txt"
 
 gfw_txt=`curl -s -L "${d_url}"`
 
