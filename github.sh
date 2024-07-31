@@ -15,7 +15,7 @@ gfw_json=""
 for((line_num=1;line_num<=${total_lines};line_num++))
 do
   line=`echo "${gfw_txt}" | sed -n "${line_num}p"`
-  line="      \"${line}\","
+  line="        \"${line}\","
   gfw_json="${gfw_json}
 ${line}"
 done
@@ -23,10 +23,10 @@ done
 gfw_json="${gfw_json}
       \"fezq2g90kz.com\""
 txt1="{
-  "version": 1,
-  "rules": [
+  \"version\": 1,
+  \"rules\": [
     {
-      "domain_suffix": ["
+      \"domain_suffix\": ["
 txt2="
       ]
     }
