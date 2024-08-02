@@ -6,12 +6,10 @@ d_url="https://raw.githubusercontent.com/Loyalsoldier/v2ray-rules-dat/release/gf
 
 gfw_txt=`curl -s -L "${d_url}"`
 
-# 获取文件总行数
 total_lines=`echo "${gfw_txt}" | wc -l`
 
 gfw_json=""
 
-# 逐行处理文件内容
 for((line_num=1;line_num<=${total_lines};line_num++))
 do
   line=`echo "${gfw_txt}" | sed -n "${line_num}p"`
@@ -21,7 +19,7 @@ ${line}"
 done
 
 gfw_json="${gfw_json}
-      \"fezq2g90kz.com\""
+        \"fezq2g90kz.com\""
 txt1="{
   \"version\": 1,
   \"rules\": [
