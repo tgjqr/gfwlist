@@ -1,4 +1,4 @@
 # gfwlist
 ## raw -> json, based on [v2ray-rules-dat](https://github.com/Loyalsoldier/v2ray-rules-dat)
-Mon Oct 19 12:00:28 PM CST 2026
+Mon Oct 19 06:00:29 PM CST 2026
 
